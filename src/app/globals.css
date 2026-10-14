@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-coral: #F2968F;
+  --color-blue: #ACD7FF;
+  --color-pink: #EDA8B3;
+  --color-green: #C5E59C;
+  --color-yellow: #F1E689;
 }
 
 @theme inline {
@@ -10,14 +15,19 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-coral: #F2968F;
 }
 
+/*denne media implementere "dark-mode - vi udkommentere den for nu"*/
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+}*/
+
+
 
 body {
   background: var(--background);
