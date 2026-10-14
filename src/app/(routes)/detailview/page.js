@@ -45,11 +45,11 @@ const DetailView = () => {
         </Link>
 
         {/* Stjerne i øverste højre hjørne */}
-<div className="absolute right-3 top-3 z-10">
-  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/30">
-    <FaRegStar size={24} className="text-white" />
-  </div>
-</div>
+        <div className="absolute right-3 top-3 z-10">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/30">
+            <FaRegStar size={24} className="text-white" />
+          </div>
+        </div>
 
         {/* Gennemsigtig avatarboks i nederste venstre hjørne */}
         <div className="absolute bottom-3 left-3 z-10 flex items-center gap-3 rounded-xl bg-white/75 p-3 backdrop-blur-sm">
@@ -84,19 +84,19 @@ const DetailView = () => {
 
       {/* Kategorier */}
       <div className="ml-4 mt-0 flex gap-4">
-        <div className="rounded-full bg-[var(--color-blue)] p-2 text-xs text-gray-500">
+        <div className="rounded-full bg-(--color-blue) p-2 text-xs text-gray-500">
           Trait 1
         </div>
 
-        <div className="rounded-full bg-[var(--color-pink)] p-2 text-xs text-gray-500">
+        <div className="rounded-full bg-(--color-pink) p-2 text-xs text-gray-500">
           Trait 2
         </div>
 
-        <div className="rounded-full bg-[var(--color-green)] p-2 text-xs text-gray-500">
+        <div className="rounded-full bg-(--color-green) p-2 text-xs text-gray-500">
           Trait 3
         </div>
 
-        <div className="rounded-full bg-[var(--color-yellow)] p-2 text-xs text-gray-500">
+        <div className="rounded-full bg-(--color-yellow) p-2 text-xs text-gray-500">
           Trait 4
         </div>
       </div>
