@@ -1,27 +1,23 @@
 
 import Image from "next/image";
 
-const BreedCard = () => {
+const BreedCard = ({ image, name, origin }) => {
   return (
-    <section className="mb-4 w-full overflow-hidden rounded-xl bg-white shadow-lg">
+    <section className="breed-card mb-4 w-full overflow-hidden">
       <Image
-        src="/dummydog.jpg"
-        alt="Dummy dog"
+        src={image}
+        alt={name}
         width={160}
         height={114}
-        className="h-auto w-full rounded-xl object-cover shadow-lg"
+        className="h-auto w-full object-cover object-[center_40%]"
       />
 
       <h3 className="p-1 pl-2 text-xl font-bold text-foreground">
-        Overskrift
+        {name}
       </h3>
 
-      <p className="pl-2 text-base text-gray-500">
-        Lorem ipsum
-      </p>
-
       <p className="pb-2 pl-2 text-base text-gray-500">
-        Lorem ipsum
+        {origin}
       </p>
     </section>
   );

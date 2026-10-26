@@ -3,31 +3,40 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-coral: #F2968F;
-  --color-blue: #ACD7FF;
-  --color-pink: #EDA8B3;
-  --color-green: #C5E59C;
-  --color-yellow: #F1E689;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-coral: #F2968F;
+
+  /* Family Friends farver */
+  --color-coral: #f2968f;
+  --color-blue: #acd7ff;
+  --color-pink: #eda8b3;
+  --color-green: #c5e59c;
+  --color-yellow: #f1e689;
 }
 
-/*denne media implementere "dark-mode - vi udkommentere den for nu"*/
+/* Fælles styling til hundekortene */
+@layer components {
+  .breed-card {
+    @apply rounded-xl bg-white shadow-lg;
+  }
+}
+
+/* Dark mode er udkommenteret indtil videre */
+
 /*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}*/
-
-
+}
+*/
 
 body {
   background: var(--background);
