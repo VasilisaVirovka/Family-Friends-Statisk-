@@ -37,7 +37,7 @@ const DetailView = async ({ params }) => {
 
   // Hent hundens billede
   const image = breed.image?.url || "/dummydog.jpg";
-
+const imageId = breed.image?.id
   return (
     <>
       {/* Header */}
@@ -78,7 +78,9 @@ const DetailView = async ({ params }) => {
 
         {/* Favoritstjerne */}
         <div className="absolute right-3 top-3 z-10">
-          <FavoriteButton id={breed.id} />
+       
+{imageId && <FavoriteButton id={imageId} />}
+
         </div>
 
         {/* Avatarboks */}

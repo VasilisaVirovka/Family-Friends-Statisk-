@@ -27,3 +27,4 @@ const FavoriteButton = ({ id }) => {
 };
 
 export default FavoriteButton;
+
