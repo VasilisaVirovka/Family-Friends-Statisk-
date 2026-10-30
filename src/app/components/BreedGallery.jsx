@@ -22,9 +22,10 @@ const BreedGallery = ({ breeds }) => {
             <BreedCard
               key={breed.id}
               id={breed.id}
-              image={breed.image?.url || "/dummydog.jpg"}
+              image={breed.image.url}
+           imageId={breed.image.id}
               name={breed.name}
-              origin={breed.origin || "Ukendt oprindelse"}
+              origin={breed.origin}
             />
           ))
         ) : (
